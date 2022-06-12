@@ -1,20 +1,24 @@
 {
-    "name": "Security",
-    "description": "Just example",
+    "name": "akoryak/security",
+	"type": "library",
+    "description": "A library for sanitize user input and output against security vulnerabilities",
+	"keywords": ["php", "security", "vulnerabilities", "user input", "sanitizer"],
+	"homepage": "https://github.com/akoryak/security",
+	"license": "Apache2",
     "require": {
-        "php": "~7.3",
+        "php": "~7.4",
     },
     "require-dev": {
         "phpunit/phpunit": "~5.7"
     },
     "autoload": {
         "psr-4": {
-            "Security\\": "app/"
+            "Akoryak\\Security\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\": "tests/"
+            "Akoryak\\SecurityTests\\": "tests/"
         }
     }
 }
